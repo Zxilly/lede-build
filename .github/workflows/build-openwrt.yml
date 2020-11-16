@@ -73,7 +73,10 @@ jobs:
         git clone https://github.com/destan19/OpenAppFilter.git
         git clone https://github.com/mchome/openwrt-dogcom.git
         git clone https://github.com/mchome/luci-app-dogcom.git
-        git clone https://github.com/openwrt-develop/ndpi-netfilter.git
+        mkdir ndpi
+        cd ndpi
+        curl -o Makefile https://gist.githubusercontent.com/Zxilly/f5c11c7976195447dd2cf455e2d75ed3/raw/66cf1f2a72085f7b0fbdc07232055f9a51845755/Makefile
+        cd ..
         cd ..
         $GITHUB_WORKSPACE/$DIY_P1_SH
 
